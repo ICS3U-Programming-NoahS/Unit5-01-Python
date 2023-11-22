@@ -1,5 +1,5 @@
 
-##################################################
+#################################################
 
 # Run Mr Coxall's Super Linter against code base #
 
@@ -28,18 +28,6 @@ jobs:
 
        uses: actions/checkout@main
 
-     - name: Prettify code
-
-       uses: Mr-Coxall/prettier_action@main
-
-       with:
-
-         # run Prettier and change code that needs fixing, before next section
-
-         prettier_options: --write **/*.{html,css,js,ts,jsx,tsx,json}
-
-         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
      - name: Run GitHub Super Linter
 
        uses: github/super-linter@main
@@ -58,6 +46,11 @@ jobs:
 
          VALIDATE_GITLEAKS: false # for secrets detection
 
+         VALIDATE_JSCPD: false # for copy and paste detection
+
+         DEFAULT_BRANCH: main
+
+         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
          VALIDATE_JSCPD: false # for copy and paste detection
 
          DEFAULT_BRANCH: main
