@@ -40,7 +40,6 @@ jobs:
 
          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-
      - name: Run GitHub Super Linter
 
        uses: github/super-linter@main
