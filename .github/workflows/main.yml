@@ -28,9 +28,6 @@ jobs:
 
        uses: actions/checkout@main
 
-
-     # remove section if you do not have any htm, js or ts files!
-
      - name: Prettify code
 
        uses: Mr-Coxall/prettier_action@main
