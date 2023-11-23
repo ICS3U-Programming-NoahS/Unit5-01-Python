@@ -1,5 +1,4 @@
-
-#################################################
+##################################################
 
 # Run Mr Coxall's Super Linter against code base #
 
@@ -46,11 +45,6 @@ jobs:
 
          VALIDATE_GITLEAKS: false # for secrets detection
 
-         VALIDATE_JSCPD: false # for copy and paste detection
-
-         DEFAULT_BRANCH: main
-
-         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
          VALIDATE_JSCPD: false # for copy and paste detection
 
          DEFAULT_BRANCH: main
